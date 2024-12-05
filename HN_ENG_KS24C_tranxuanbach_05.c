@@ -51,23 +51,23 @@ int main(){
 	    	break;		
 			}
 			case 4: {
-                if (n < 2) {
-                printf("ko co gia tri nho thu 2 vi mang chi co %d phan tu\n", n);
-                } else {
-                int min1 = __INT_MAX__, min2 = __INT_MAX__;
-                for (i = 0; i < n; i++) {
-                if (arr[i] < min1) {
-                min2 = min1;
-                min1 = arr[i];
-               }else if (arr[i] < min2 && arr[i] != min1) {
-                min2 = arr[i];
+                     if (n < 2) {
+                     printf("ko co gia tri nho thu 2 vi mang chi co %d phan tu\n", n);
+                     } else {
+                    int min1 = __INT_MAX__, min2 = __INT_MAX__;
+                    for (i = 0; i < n; i++) {
+                    if (arr[i] < min1) {
+                    min2 = min1;
+                    min1 = arr[i];
+                   }else if (arr[i] < min2 && arr[i] != min1) {
+                    min2 = arr[i];
                }
             }
-                if (min2 == __INT_MAX__) {
-                printf("ko co gia tri nho thu 2\n");
-            }   else {
-                printf("gia tri nho thu 2 la %d\n",min2);
-                }
+                    if (min2 == __INT_MAX__) {
+                    printf("ko co gia tri nho thu 2\n");
+                   }else {
+                    printf("gia tri nho thu 2 la %d\n",min2);
+                   }
             } 
             break;
             }
